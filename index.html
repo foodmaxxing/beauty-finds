@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>5 Amazon Beauty Finds You Need Right Now</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box !important; margin: 0 !important; padding: 0 !important; }
+
+  body {
+    font-family: 'DM Sans', sans-serif !important;
+    background-color: #fdf8f4 !important;
+    color: #2a1f1a !important;
+    line-height: 1.7 !important;
+  }
+
+  .page-wrapper {
+    max-width: 780px !important;
+    margin: 0 auto !important;
+    padding: 60px 24px 80px !important;
+  }
+
+  .site-label {
+    font-size: 11px !important;
+    letter-spacing: 0.18em !important;
+    text-transform: uppercase !important;
+    color: #b07d5e !important;
+    font-weight: 500 !important;
+    margin-bottom: 18px !important;
+    display: block !important;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: clamp(32px, 6vw, 52px) !important;
+    font-weight: 600 !important;
+    line-height: 1.15 !important;
+    color: #1a100a !important;
+    margin-bottom: 20px !important;
+  }
+
+  h1 em {
+    font-style: italic !important;
+    color: #b07d5e !important;
+  }
+
+  .intro {
+    font-size: 17px !important;
+    color: #5a4038 !important;
+    max-width: 600px !important;
+    margin-bottom: 10px !important;
+    line-height: 1.8 !important;
+  }
+
+  .price-disclaimer {
+    font-size: 12px !important;
+    color: #9e7b6a !important;
+    font-style: italic !important;
+    margin-bottom: 52px !important;
+  }
+
+  .divider {
+    width: 48px !important;
+    height: 2px !important;
+    background: #b07d5e !important;
+    margin-bottom: 52px !important;
+  }
+
+  .product-card {
+    display: grid !important;
+    grid-template-columns: 260px 1fr !important;
+    gap: 36px !important;
+    margin-bottom: 60px !important;
+    padding-bottom: 60px !important;
+    border-bottom: 0.5px solid #e5d5cb !important;
+    align-items: start !important;
+  }
+
+  .product-card:last-of-type {
+    border-bottom: none !important;
+  }
+
+  .image-container {
+    width: 260px !important;
+    height: 300px !important;
+    background-color: #f0e8e2 !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+    flex-shrink: 0 !important;
+    position: relative !important;
+  }
+
+  .image-container img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+  }
+
+  .image-placeholder {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    color: #c9a898 !important;
+    font-size: 12px !important;
+    text-align: center !important;
+    padding: 16px !important;
+  }
+
+  .image-placeholder svg {
+    opacity: 0.4 !important;
+  }
+
+  .product-content {
+    padding-top: 6px !important;
+  }
+
+  .product-number {
+    font-size: 11px !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    color: #b07d5e !important;
+    font-weight: 500 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .product-name {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: #1a100a !important;
+    line-height: 1.3 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .product-category {
+    font-size: 12px !important;
+    color: #9e7b6a !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
+    margin-bottom: 16px !important;
+  }
+
+  .product-desc {
+    font-size: 15px !important;
+    color: #4a3028 !important;
+    line-height: 1.85 !important;
+    margin-bottom: 22px !important;
+  }
+
+  .product-footer {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .price-tag {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .price {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #1a100a !important;
+  }
+
+  .sale-badge {
+    font-size: 11px !important;
+    background-color: #f5ede8 !important;
+    color: #a0522d !important;
+    padding: 3px 8px !important;
+    border-radius: 20px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.04em !important;
+  }
+
+  .cta-btn {
+    display: inline-block !important;
+    text-decoration: none !important;
+    background-color: #b07d5e !important;
+    color: #fff !important;
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.06em !important;
+    padding: 10px 22px !important;
+    border-radius: 2px !important;
+    transition: background-color 0.2s !important;
+  }
+
+  .cta-btn:hover {
+    background-color: #8f5e40 !important;
+  }
+
+  .footer-note {
+    margin-top: 60px !important;
+    padding-top: 32px !important;
+    border-top: 0.5px solid #e5d5cb !important;
+    font-size: 12px !important;
+    color: #9e7b6a !important;
+    font-style: italic !important;
+    line-height: 1.8 !important;
+  }
+
+  @media (max-width: 600px) {
+    .product-card {
+      grid-template-columns: 1fr !important;
+    }
+    .image-container {
+      width: 100% !important;
+      height: 260px !important;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <span class="site-label">Amazon Beauty Finds</span>
+
+  <h1>5 Beauty Finds Under $15 <em>Everyone</em> Is Adding to Cart</h1>
+
+  <p class="intro">You don't need a big budget or a 12-step routine to look and feel amazing. These five Amazon picks are the ones I keep coming back to — and once you try them, you'll totally get it.</p>
+  <p class="price-disclaimer">Prices listed were accurate at the time this article was written and are subject to change.</p>
+
+  <div class="divider"></div>
+
+  <!-- PRODUCT 1 -->
+  <div class="product-card">
+    <div class="image-container">
+      <img src="image1.jpg" alt="Maybelline Lash Sensational Sky High Mascara" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+      <div class="image-placeholder" style="display:none;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        image1.jpg
+      </div>
+    </div>
+    <div class="product-content">
+      <p class="product-number">Find No. 01</p>
+      <h2 class="product-name">Maybelline Lash Sensational Sky High Mascara</h2>
+      <p class="product-category">Makeup · Eyes</p>
+      <p class="product-desc">If there's one mascara that has earned its cult status, it's this one. The flexible fiber brush reaches every single lash — even the tiny ones in the corners you usually miss — for a fanned-out, lengthened look that holds all day without flaking or smudging. Over 80,000 five-star Amazon reviewers call it their holy grail, and honestly? They're not wrong. It's the kind of mascara that makes people ask if you're wearing falsies.</p>
+      <div class="product-footer">
+        <div class="price-tag">
+          <span class="price">$10.82</span>
+          <span class="sale-badge">23% off today</span>
+        </div>
+        <a href="https://amzn.to/3S2rjgN" class="cta-btn" target="_blank" rel="nofollow sponsored">Shop on Amazon →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="product-card">
+    <div class="image-container">
+      <img src="image2.jpg" alt="Hero Cosmetics Mighty Patch Original" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+      <div class="image-placeholder" style="display:none;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        image2.jpg
+      </div>
+    </div>
+    <div class="product-content">
+      <p class="product-number">Find No. 02</p>
+      <h2 class="product-name">Hero Cosmetics Mighty Patch Original</h2>
+      <p class="product-category">Skincare · Blemishes</p>
+      <p class="product-desc">You wake up with a pimple, you slap on a Mighty Patch before bed, and by morning it's like it never happened. These little hydrocolloid stickers pull out the gunk overnight without drying out or irritating your skin — no picking, no popping, no scarring. They've become a bathroom cabinet staple for a reason, and at this price, you'll want to keep a pack on your nightstand, in your purse, and at your desk. You've been warned.</p>
+      <div class="product-footer">
+        <div class="price-tag">
+          <span class="price">$12.99</span>
+        </div>
+        <a href="https://amzn.to/3RKBXZB" class="cta-btn" target="_blank" rel="nofollow sponsored">Shop on Amazon →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT 3 -->
+  <div class="product-card">
+    <div class="image-container">
+      <img src="image3.jpg" alt="e.l.f. Halo Glow Liquid Filter" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+      <div class="image-placeholder" style="display:none;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        image3.jpg
+      </div>
+    </div>
+    <div class="product-content">
+      <p class="product-number">Find No. 03</p>
+      <h2 class="product-name">e.l.f. Halo Glow Liquid Filter</h2>
+      <p class="product-category">Makeup · Complexion</p>
+      <p class="product-desc">This is the product that broke the internet — and for good reason. Mix a drop into your foundation, wear it solo, or dab it on your cheekbones for that lit-from-within glow everyone thinks you're born with. It's the dupe the beauty community couldn't stop talking about, delivering that same dewy, blurred-skin finish as its high-end counterpart at a fraction of the price. One bottle goes a long way, and your complexion will thank you every single morning.</p>
+      <div class="product-footer">
+        <div class="price-tag">
+          <span class="price">$14.00</span>
+          <span class="sale-badge">7% off today</span>
+        </div>
+        <a href="https://amzn.to/4fWTIyL" class="cta-btn" target="_blank" rel="nofollow sponsored">Shop on Amazon →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT 4 -->
+  <div class="product-card">
+    <div class="image-container">
+      <img src="image4.jpg" alt="Eos Shea Better Vanilla Cashmere Body Lotion" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+      <div class="image-placeholder" style="display:none;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        image4.jpg
+      </div>
+    </div>
+    <div class="product-content">
+      <p class="product-number">Find No. 04</p>
+      <h2 class="product-name">Eos Shea Better Vanilla Cashmere Body Lotion</h2>
+      <p class="product-category">Body · Moisturizer</p>
+      <p class="product-desc">There's a reason this lotion hit the #2 bestseller spot on Amazon — it smells absolutely incredible and your skin drinks it up without feeling greasy or sticky. The Vanilla Cashmere scent is warm, cozy, and just subtle enough that people will lean in and ask what you're wearing. Packed with shea butter and oat, it leaves your skin silky smooth all day. It's the kind of everyday luxury that doesn't feel like a splurge at all.</p>
+      <div class="product-footer">
+        <div class="price-tag">
+          <span class="price">$9.97</span>
+          <span class="sale-badge">9% off today</span>
+        </div>
+        <a href="https://amzn.to/4o5gIgV" class="cta-btn" target="_blank" rel="nofollow sponsored">Shop on Amazon →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT 5 -->
+  <div class="product-card">
+    <div class="image-container">
+      <img src="image5.jpg" alt="Mielle Organics Rosemary Mint Hair Oil" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+      <div class="image-placeholder" style="display:none;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        image5.jpg
+      </div>
+    </div>
+    <div class="product-content">
+      <p class="product-number">Find No. 05</p>
+      <h2 class="product-name">Mielle Organics Rosemary Mint Hair Oil</h2>
+      <p class="product-category">Haircare · Scalp &amp; Growth</p>
+      <p class="product-desc">The hair growth oil that took over every corner of the internet — and it genuinely delivers. Massage it into your scalp a few times a week and you'll start noticing baby hairs and less breakage within weeks. The rosemary and mint combo tingles in the best way and leaves your hair smelling fresh without being overpowering. Whether you're dealing with thinning edges, slow growth, or just want healthier hair overall, this little bottle punches way above its weight.</p>
+      <div class="product-footer">
+        <div class="price-tag">
+          <span class="price">$8.35</span>
+          <span class="sale-badge">16% off today</span>
+        </div>
+        <a href="https://amzn.to/4aqZUeK" class="cta-btn" target="_blank" rel="nofollow sponsored">Shop on Amazon →</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer-note">This post contains affiliate links. If you purchase through these links, I may earn a small commission at no extra cost to you — it helps keep this content free. Prices and sale percentages were accurate at the time of writing and are subject to change. Always check Amazon for the current price before purchasing.</p>
+
+</div>
+</body>
+</html>
